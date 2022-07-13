@@ -34,7 +34,7 @@ List of major changes in NLog 5.0: https://nlog-project.org/2021/08/25/nlog-5-0-
     <!-- SonarQube needs ProjectGuid -->
     <ProjectGuid>{6A236D76-C9D9-4B1D-8DDE-F6978D110288}</ProjectGuid>
     <SignAssembly>true</SignAssembly>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.5</AssemblyVersion>
     <AssemblyOriginatorKeyFile>..\NLog.snk</AssemblyOriginatorKeyFile>
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <!-- EmbedUntrackedSources for deterministic build -->
@@ -76,8 +76,8 @@ List of major changes in NLog 5.0: https://nlog-project.org/2021/08/25/nlog-5-0-
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
